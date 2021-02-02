@@ -11,27 +11,32 @@
 
   </head>
   <body>
-    <h1>Are u Genius??</h1>
+    <div class="banner">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+          <h1>Are u Genius??</h1>
 
-    <button type="button" class="btn btn-primary" id="start-button">Start Game</button>
+          <button type="button" class="btn btn-primary" id="start-button">Start Game</button>
 
-    <ul class="letters">
-    </ul>
+          <ul class="letters"></ul>
+          
+          <form id="search-form">
+            <div class="form-group">
+              <label for="text">What's the longest word?</label>
+              <input type="text" name="word" class="form-control">
+              <div class="input-group-btn">
+                <input type="submit" value="Submit!" class="btn btn-primary" id="end-submit">
+              </div>
+            </div>
+          </form>
 
-    <p>What's the longest word?</p>
-
-    <form class="form-inline" id="search-form">
-      <div class="input-group">
-        <input type="text" name="word" class="form-control">
-        <div class="input-group-btn">
-          <input type="submit" value="Submit!" class="btn btn-default" id="end-submit">
+          <div id="time"></div>
+          <div id="result"></div>
         </div>
-      </div>
-    </form>
-
-    <div id="time"></div>
-    <div id="result"></div>
-
+      </div> 
+    </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
