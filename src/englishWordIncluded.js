@@ -11,6 +11,7 @@ const searchWord = (word, isIncluded) => {
     // console.log(data['found']);
     // console.log(word);
     // console.log(isIncluded);
+    result.innerHTML = '';
     if (isIncluded === true) {
       if (data['found'] === true) {
         result.insertAdjacentHTML('afterbegin', ` <p>You are <strong>genuis!!! ${word}</strong> is a valid English word</p>
